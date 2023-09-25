@@ -1,56 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.example</groupId>
-  <artifactId>spring-boot-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-      <version>2.5.4</version>
-    </dependency>
-  </dependencies>
-
-  <!-- SonarQube Plugin Configuration -->
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>2.15</version> <!-- Use the latest version of the SonarQube Maven plugin -->
-        <executions>
-          <execution>
-            <phase>verify</phase>
-            <goals>
-              <goal>sonar:sonar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
-
-  <!-- SonarQube Properties -->
-  <profiles>
-    <profile>
-      <id>sonar</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <properties>
-        <!-- Optional URL to server. Default value is http://localhost:9000 -->
-        <sonar.host.url>http://3.24.138.96:9000</sonar.host.url>
-        <sonar.login>squ_e3fd72176ba0d583cd60800980c128ae1f1ed037</sonar.login>
-      </properties>
-    </profile>
-  </profiles>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.example</groupId>
+<artifactId>spring-boot-app</artifactId>
+<version>1.0-SNAPSHOT</version>
+<properties>
+<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+<dependencies>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+</dependencies>
 </project>
