@@ -5,7 +5,7 @@ FROM openjdk:8-jre-alpine
 WORKDIR /app
 
 # Copy the compiled Spring Boot JAR file into the container
-COPY target/spring-boot-app-2.0-SNAPSHOT.jar .
+COPY target/spring-boot-app-1.0-SNAPSHOT.jar .
 
 # Define the command to run your Spring Boot application
-CMD ["java", "-jar", "spring-boot-app-2.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "spring-boot-app-1.0-SNAPSHOT.jar"]
