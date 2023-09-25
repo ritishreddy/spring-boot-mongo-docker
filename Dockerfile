@@ -1,11 +1,11 @@
-FROM openjdk:18-jdk-slim
+# Use a base image with Java 8
+FROM openjdk:8-jre-alpine
 
-COPY . /app
-
+# Set the working directory
 WORKDIR /app
 
-RUN mvn clean package
+# Copy the compiled Spring Boot JAR file into the container
+COPY target/spring-boot-app-1.0-SNAPSHOT.jar .
 
-EXPOSE 8080
-
-ENTRYPOINT ["java", "-jar", "spring-boot-app.jar"]
+# Define the command to run your Spring Boot application
+CMD ["java", "-jar", "spring-boot-app-1.0-SNAPSHOT.jar"]
