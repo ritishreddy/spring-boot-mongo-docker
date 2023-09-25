@@ -8,7 +8,7 @@
 <maven.compiler.target>1.8</maven.compiler.target>
 </properties>
   <properties>
-    <sonar.host.url>https://3.24.138.96:9000</sonar.host.url>
+    <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
     <sonar.login>squ_83c6c865cf143ee92f43d209b485a9ecae420045</sonar.login>
 </properties>
 <dependencies>
