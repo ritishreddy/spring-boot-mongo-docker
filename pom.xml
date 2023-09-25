@@ -9,7 +9,8 @@
 </properties>
   <properties>
     <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
-    <sonar.login>squ_83c6c865cf143ee92f43d209b485a9ecae420045</sonar.login>
+    <sonar.login>squ_e6b63f09b74b4cdc8ea49f9f02c59bd20395f88e</sonar.login>
+    <sonar.organization>Administrator</sonar.organization>
 </properties>
 <dependencies>
 <dependency>
